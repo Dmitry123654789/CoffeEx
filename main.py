@@ -306,7 +306,6 @@ class TableCoffe(QMainWindow):
         self.coffe.show()
 
     def on_cell_double_clicked(self, row, column):
-        print(self.tableWidget.item(row, 0))
         self.coffe = CreateCoffe(id=self.tableWidget.item(row, 0).text())
         self.coffe.show()
 
